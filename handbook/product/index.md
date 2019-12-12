@@ -20,6 +20,10 @@ See job descriptions and responsibilities of roles on the Product team:
 
 See "[Personas](personas.md)".
 
+## [Tracking user feedback](user_feedback.md)
+
+See "[Tracking user feedback](user_feedback.md)".
+
 ## Product planning is continuous
 
 See "[Planning](planning.md)".
