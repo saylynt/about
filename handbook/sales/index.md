@@ -27,6 +27,20 @@ The Sales team represents us and our values to customers, bringing back dollars 
 
 Annual Recurring Revenue (ARR) is the dollar value of contracted recurring revenue in a (normalized) one-year period.
 
+### IARR
+
+Incremental [ARR](#arr) (IARR) is the change in ARR from one period to another.
+
+### New IARR
+
+New [IARR](#iarr) is IARR from *new customers* (i.e., organizations that were **not** existing customers at the beginning of the period). See also [expansion IARR](#expansion-iarr).
+
+### Expansion IARR
+
+Expansion [IARR](#iarr) is IARR from *existing customers* (i.e., organizations that were already customers at the beginning of the period).
+
+If within a single period a new customer signs a contract which then grows in ARR before the end of the period, the total ending ARR is all considered [new IARR](#new-iarr), not expansion IARR. For example, if Acme Corp signs a $100k contract on February 3 and then the contract expands to $200k on March 5, all $200k would be considered new IARR for Q1.
+
 ### Customer
 
 A customer is an organization with a Sourcegraph subscription contract that has not ended.
@@ -120,25 +134,25 @@ Different customers and deals have different needs from our sales team. We segme
 
 ## Using HubSpot
 
-This page describes how we use HubSpot to maintain high data quality. This allows us to increase the effectiveness of all Sourcegraph teams through accurate insights. 
+This page describes how we use HubSpot to maintain high data quality. This allows us to increase the effectiveness of all Sourcegraph teams through accurate insights.
 
-Account Executives are responisble for maintaining HubSpot as a [source of truth](https://about.sourcegraph.com/handbook/communication#sources-of-truth). The data is synced between HubSpot and Looker every weekend so this data must be updated (at least) by end of day Friday. 
+Account Executives are responisble for maintaining HubSpot as a [source of truth](https://about.sourcegraph.com/handbook/communication#sources-of-truth). The data is synced between HubSpot and Looker every weekend so this data must be updated (at least) by end of day Friday.
 
 ### Associating contacts to deals
 
-It is critical to associate all of the most important contacts within a company with any new deal. This should include the technical decision-maker, the economic decision-maker (if they are different) and the original member who introduced Sourcegraph to the organization. 
+It is critical to associate all of the most important contacts within a company with any new deal. This should include the technical decision-maker, the economic decision-maker (if they are different) and the original member who introduced Sourcegraph to the organization.
 
 This ensures that all deal-related communication is visible within the deal timeline for teammates to quickly get context surrounding the deal. This also allows us to evaluate the effectiveness of marketing channels and sales touchpoints that our team has with an organization. How we reached the person(s) who introduced Sourcegraph to their organization is one of the most important factors in evaluating the success of marketing activities.
 
 ### Maintaining up-to-date information on deals
 
-Please keep the following information updated for deals. These are the the most important deal fields for weekly reviews and tracking, but the more fields that have up-to-date information, the better.  
+Please keep the following information updated for deals. These are the the most important deal fields for weekly reviews and tracking, but the more fields that have up-to-date information, the better.
 
 * Deal stage
 * Deal size
 * Number of engineers
 
-If a deal comes through a referral or introduction, tell [BizOps](../bizops/index.md) so an adjustment can be made in the database to reflect this. 
+If a deal comes through a referral or introduction, tell [BizOps](../bizops/index.md) so an adjustment can be made in the database to reflect this.
 
 ### When a deal is won
 1. Mark the ‘Deal Status’ as ‘Closed Won’
@@ -146,7 +160,7 @@ If a deal comes through a referral or introduction, tell [BizOps](../bizops/inde
 
 ### When a deal is lost
 1. Update the ‘Closed Lost Dropdown’ property to reflect the reason. If the reason doesn’t exist in the dropdown, you can talk to [BizOps](../bizops/index.md) about adding one
-1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](https://about.sourcegraph.com/company/okrs/2019_q4) to identify the top 3 reasons potential customers don't sign. 
+1. Expand upon the reason in the longform ‘Closed Lost Reason’ field. This supports [2019-Q4 OKR 1 v](https://about.sourcegraph.com/company/okrs/2019_q4) to identify the top 3 reasons potential customers don't sign.
 
 ### Recording outbound activity
 
@@ -157,6 +171,6 @@ Categorize any outbound emails into the ‘Manual Outbound Workflow’, which se
 
 ### Maintaining customer spreadsheets
 
-Maintaining [Server Installers to Company List](https://docs.google.com/spreadsheets/d/1Y2Z23-2uAjgIEITqmR_tC368OLLbuz12dKjEl4CMINA/edit?usp=sharing) and [Server to Company List](https://docs.google.com/spreadsheets/d/1wo_KQIcGrNGCWYKa6iHJ7MImJ_aI7GN12E-T21Es8TU/edit?usp=sharing) spreadsheets for every new company on a trial and new customers. 
+Maintaining [Server Installers to Company List](https://docs.google.com/spreadsheets/d/1Y2Z23-2uAjgIEITqmR_tC368OLLbuz12dKjEl4CMINA/edit?usp=sharing) and [Server to Company List](https://docs.google.com/spreadsheets/d/1wo_KQIcGrNGCWYKa6iHJ7MImJ_aI7GN12E-T21Es8TU/edit?usp=sharing) spreadsheets for every new company on a trial and new customers.
 
-These are used as join tables in Looker, and are important to connect instance data to a specific customer.  
+These are used as join tables in Looker, and are important to connect instance data to a specific customer.
